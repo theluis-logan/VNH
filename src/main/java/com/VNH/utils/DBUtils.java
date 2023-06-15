@@ -21,10 +21,4 @@ public class DBUtils {
         conn = DriverManager.getConnection(URL, "sa", "12345");
         return conn;
     }
-    
-    public static void main(String[] args) {
-        try{
-            System.out.println(DBUtils.makeConnection());
-        }catch(ClassNotFoundException | SQLException e){}
-    }
 }
